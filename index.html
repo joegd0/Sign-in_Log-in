@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="divbuts">
+    <button type="button" id="red"></button>
+    <button type="button" id="blue"></button>
+    <button type="button" id="pink"></button>
+    </div>
+    <div id="mains">
+    <div id="message"></div>
+    <form action="" class="all">
+    
+        <div class="divsign"><h2 class="sign-in">Sign-in</h2></div>
+        <div class="names">
+            <input type="text" id="firstname" oninput="firstnameF()" onblur="firstnameF()" placeholder="First Name">
+            <input type="text" id="secondname" oninput="secondnameF()" onblur="secondnameF()" placeholder="Last Name">
+        </div>
+        <div class="divemail">
+            <input type="email" id="email" oninput="emailF()" onblur="emailF()"  placeholder="Enter Your Email">
+        </div>
+        <div class="phoneratio">
+            <input type="tel" id="phone" oninput="phoneF()"  onblur="phoneF2()" placeholder="Enter Your Phone Number">
+            <div class="divgender">
+                <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male" onclick="male()">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female" onclick="female()">
+            </div>
+        </div>
+        <input type="password" id="firstpassword" oninput="firstpasswordF()"  onblur="firstpasswordF()"  placeholder="Enter Your Password">
+        <input type="password" id="secondpassword" oninput="secondpasswordF()"  onblur="secondpasswordF()"  placeholder="Re-enter Your Password">
+        <div id="blank"></div>
+        <div class="divbutton">
+        <button id="signbutton" type="button">Sign In</button>
+        </div>
+        <div class="divlogin">
+        <p class="login">Already have an account? <a class="log2" href="logindex.html">Log In</a></p>
+        </div>        
+    </form>
+ </div>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>

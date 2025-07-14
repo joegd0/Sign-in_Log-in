@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(rgb(243, 146, 146), rgb(141, 31, 31));
+    align-items: center;
+}
+#mains{
+    display: flex;
+    justify-content: center;
+    background-color: #00000000;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+   
+}
+.all{
+    background-color:rgb(206, 132, 132);
+    width: 50%;
+    height: 700px;
+    margin-top: 50px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+.sign-in{
+    font-size: 70px;
+    font-family: sans-serif;
+
+}
+.divsign{
+    display: flex;
+    justify-content: center;
+    border-bottom: dashed;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+.names{
+    display: flex;
+    justify-content: space-around;
+    margin-top:    40px;
+}
+#firstname{
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+#secondname{
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.divemail{
+    margin: 20px 41px;
+    display: flex;
+    justify-content: center;
+}
+#email{
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.phoneratio{
+    display: flex;
+    justify-content:space-between ;
+    margin: 20px 41px;
+}
+#phone{
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+.divgender{
+    display: flex;
+    width : 50%;
+    justify-content: center;
+    align-items: center;
+}
+.divgender label{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+#firstpassword{
+    display: block;
+    height: 35px;
+    width:  555px;
+    font-size: 20px;
+    margin: 20px 41px;
+    transition: 0.5s;
+}
+
+#secondpassword{
+    display: block;
+    height: 35px;
+    width: 555px;
+    font-size: 20px;
+    margin: 20px 41px;
+    transition: 0.5s;
+
+}
+.divbutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#signbutton{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    transition: 0.5s;
+}
+.signbutton:hover{
+    scale: 1.1;
+    background-color: darkgray;
+}
+.divlogin{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.login{
+    display: block;
+}
+.log2{
+    transition: 0.5s;
+}
+input{
+       background-color: #d4d4d6;
+}
+input:hover{
+    border: 3px solid rgb(128, 3, 3);
+}
+#signbutton:hover, input[type='radio']:hover , input[type='text']:focus , input[type='email']:focus , input[type='number']:focus , input[type='password']:focus , input[type='tel']:focus{
+    transform: scale(1.2);
+    background: linear-gradient(rgb(243, 146, 146), rgb(139, 6, 6));
+    font-style: rgb(0, 0, 0);
+}
+#blank{
+    color: rgb(230, 50, 50);
+    font-size: large;
+    margin-left: 41px;
+}
+.message{
+    background-color: rgb(100, 57, 117);
+    height: 200px;
+    width: 700px;
+    
+    position: absolute;
+    top: 10px;
+    border-radius: 30px;
+    animation: message 2s;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    border-width: 10px;
+    border-color: black;
+    color: #e6e6e6;
+    animation-iteration-count: 1;
+}
+@keyframes message{
+    0%{
+        top:-350px;
+
+    }
+    100%{
+        top: 10px;
+    }
+}
+.message p{
+    display: block;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.message a{
+    margin-left: 250px;
+    color: azure;
+}
+.message button{
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+}
+.message button:hover{
+    background-color: #bebcbc;
+}
+.remove{
+    animation: removes 2s ;
+    animation-fill-mode: forwards;
+}
+@keyframes removes{
+    from{
+        top: 10px;
+    }
+    to{
+        top: -350px;
+        display: none;
+    }
+}
+.divbuts{
+   display: flex;
+   justify-content: right;
+   gap: 10px;
+   margin-right: 60px;
+   margin-top: 30px;
+}
+#red{
+     background: linear-gradient(rgb(243, 146, 146), rgb(139, 6, 6));
+    width: 25px;
+    height: 25px;
+    border-width:3px ;
+}
+#blue{
+       background: linear-gradient(rgb(109, 221, 230), rgb(134, 132, 241));
+    width: 25px;
+    height: 25px;
+    border-width:0.5px ;
+}
+#pink{
+    background: linear-gradient(rgb(208, 195, 219), rgb(118, 22, 197));
+    width: 25px;
+    height: 25px;
+    border-width:0.5px ;
+}
+
+
+
+
+
+.female{
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(rgb(208, 195, 219), rgb(118, 22, 197));
+    align-items: center;
+}
+.female .all{
+    background-color:#aea6da;
+    width: 50%;
+    height: 700px;
+    margin-top: 50px ;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+.female .sign-in{
+    font-size: 70px;
+    font-family: sans-serif;
+
+}
+.female .divsign{
+    display: flex;
+    justify-content: center;
+    border-bottom: dashed;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+.female .names{
+    display: flex;
+    justify-content: space-around;
+    margin-top:    40px;
+}
+.female #firstname{
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.female #secondname{
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.divemail{
+    margin: 20px 41px;
+    display: flex;
+    justify-content: center;
+}
+.female #emailphone{
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.female .phoneratio{
+    display: flex;
+    justify-content:space-between ;
+    margin: 20px 41px;
+}
+.female #phone{
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+.female .divgender{
+    display: flex;
+    width : 50%;
+    justify-content: center;
+    align-items: center;
+}
+.female .divgender label{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+.female #firstpassword{
+    display: block;
+    height: 35px;
+    width:  555px;
+    font-size: 20px;
+    margin: 20px 41px;
+    transition: 0.5s;
+}
+
+.female #secondpassword{
+    display: block;
+    height: 35px;
+    width: 555px;
+    font-size: 20px;
+    margin: 20px 41px;
+    transition: 0.5s;
+
+}
+.female .divbutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.female #signbutton{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    transition: 0.5s;
+}
+.female .signbutton:hover{
+    scale: 1.1;
+    background-color: darkgray;
+}
+.female .divlogin{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.female .login{
+    display: block;
+}
+.female .log2{
+    transition: 0.5s;
+}
+.female input{
+    background-color: rgb(222, 202, 240);
+}
+.female input:hover{
+    border: 3px solid blueviolet;
+}
+.female #signbutton:hover,.female input[type='radio']:hover ,.female input[type='text']:focus ,.female input[type='email']:focus ,.female input[type='number']:focus ,.female input[type='password']:focus ,.female input[type='tel']:focus{
+    transform: scale(1.2);
+    background:linear-gradient(rgb(208, 195, 219), rgb(202, 157, 240));
+}
+.female #blank{
+    color: rgb(230, 50, 50);
+    font-size: large;
+    margin-left: 41px;
+}
+.female #red{
+  background: linear-gradient(rgb(243, 146, 146), rgb(139, 6, 6));
+    width: 25px;
+    height: 25px;
+    border-width:0.5px ;
+}
+.female #blue{
+       background: linear-gradient(rgb(109, 221, 230), rgb(134, 132, 241));
+    width: 25px;
+    height: 25px;
+    border-width:0.5px ;
+}
+.female #pink{
+   background: linear-gradient(rgb(208, 195, 219), rgb(118, 22, 197));
+    width: 25px;
+    height: 25px;
+    border-width:3px ;
+}
+
+
+.male{
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(rgb(109, 221, 230), rgb(134, 132, 241));
+    align-items: center;
+}
+.male .all{
+    background-color:#4bb5df;
+    width: 50%;
+    height: 700px;
+    margin-top: 50px ;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+.male .sign-in{
+    font-size: 70px;
+    font-family: sans-serif;
+
+}
+.male .divsign{
+    display: flex;
+    justify-content: center;
+    border-bottom: dashed;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+.male .names{
+    display: flex;
+    justify-content: space-around;
+    margin-top:    40px;
+}
+.male #firstname{
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.male #secondname{
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.divemail{
+    margin: 20px 41px;
+    display: flex;
+    justify-content: center;
+}
+.male #emailphone{
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.male .phoneratio{
+    display: flex;
+    justify-content:space-between ;
+    margin: 20px 41px;
+}
+.male #phone{
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+.male .divgender{
+    display: flex;
+    width : 50%;
+    justify-content: center;
+    align-items: center;
+}
+.male .divgender label{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+.male #firstpassword{
+    display: block;
+    height: 35px;
+    width:  555px;
+    font-size: 20px;
+    margin: 20px 41px;
+    transition: 0.5s;
+}
+
+.male #secondpassword{
+    display: block;
+    height: 35px;
+    width: 555px;
+    font-size: 20px;
+    margin: 20px 41px;
+    transition: 0.5s;
+
+}
+.male .divbutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.male #signbutton{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    transition: 0.5s;
+}
+.male .signbutton:hover{
+    scale: 1.1;
+    background-color: darkgray;
+}
+.male .divlogin{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.male .login{
+    display: block;
+}
+.male .log2{
+    transition: 0.5s;
+}
+.male input{
+    background-color: rgb(189, 250, 252);
+}
+.male input:hover{
+    border: 3px solid rgb(11, 117, 8);
+}
+.male #signbutton:hover, .male input[type='radio']:hover , .male input[type='text']:focus , .male input[type='email']:focus ,.male input[type='number']:focus ,.male input[type='password']:focus ,.male input[type='tel']:focus{
+    transform: scale(1.2);
+    background: linear-gradient(rgb(109, 221, 230), rgb(134, 132, 241));
+}
+.female #blank{
+    color: rgb(230, 50, 50);
+    font-size: large;
+    margin-left: 41px;
+}
+.male #red{
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    border-width:0.5px ;
+}
+.male #blue{
+       background: linear-gradient(rgb(109, 221, 230), rgb(134, 132, 241));
+    width: 25px;
+    height: 25px;
+    border-width:3px ;
+}
+.male #pink{
+   background: linear-gradient(rgb(208, 195, 219), rgb(118, 22, 197));
+    width: 25px;
+    height: 25px;
+    border-width:0.5px ;
+}
+

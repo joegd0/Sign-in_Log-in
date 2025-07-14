@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="logindex.css">
+</head>
+
+<body>
+    <div class="divbuts">
+        <button type="button" id="red"></button>
+        <button type="button" id="blue"></button>
+        <button type="button" id="pink"></button>
+    </div>
+    <div class="mains">
+        <div id="message"></div>
+        <form action="" class="all">
+
+            <div class="divsign">
+                <h2 class="sign-in">Log-in</h2>
+                </div>
+             <div class="divemail">
+                <input type="email" id="emailphone" onblur="emailphoneF()"
+                    placeholder="Enter Your Email or Phone number">
+                </div>
+            
+            <input type="password" id="firstpassword" placeholder="Enter Your Password">
+            <div id="blank"></div>
+            <div class="divbutton">
+                 <button id="signbutton" type="button" onclick="check()">Log In</button>
+              </div>
+           <div class="divlogin">
+        <p class="login">Don't have an account? <a class="log2" href="index.html">Sign In</a></p>
+          </div>
+    </form>
+    </div>
+    <script src="logmain.js"></script>
+</body>
+
+</html>
