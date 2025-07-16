@@ -312,7 +312,7 @@ input:hover{
 @media screen and (max-width: 600px){
 
     .all{
-        width: 50%;
+        width: 62%;
         height: 400;
     }
     .sign-in{
@@ -427,3 +427,126 @@ input:hover{
 
 }
 
+
+
+
+
+
+@media screen and (max-width: 1199px) and (min-width: 601px){
+
+    .all{
+        width: 62%;
+        height: 500;
+    }
+    .sign-in{
+        font-size: 35px;
+    }
+    .divsign{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .names{
+        margin-top: 30px;
+    }
+    #firstname{
+        height: 20px;
+        width: 45%;
+        font-size: 20px;
+    }
+    #secondname{
+        height: 20px;
+        width: 45%;
+        font-size: 20px;
+    }
+    .divemail{
+        margin: 15px 8px ;
+
+    }
+    #email{
+        height: 20px;
+        font-size: 20px;
+        margin: 0;
+
+    }
+    .phoneratio{
+        margin: 15px 8px ;
+
+        
+    }
+    #phone{
+        height: 20px;
+        font-size: 20px;
+        width:55%;
+        margin: 0;
+
+    }
+    .divgender{
+        width: 45%;
+        align-items: center;
+        justify-content: center;
+    }
+    .divgender label{
+        font-size: 20px;
+        margin-left: 20%;
+        margin-right: 1.5px;
+        margin-bottom: 3px;
+
+
+    }
+    #firstpassword{
+        height: 20px;
+        margin: 15px 8px ;
+        font-size: 20px;
+        display :flex ;
+        width: 96%;
+    }
+    #secondpassword{
+        height: 20px; 
+        margin: 15px 8px ;
+        font-size: 20px;
+        display :flex ;
+        width: 96%;
+    }
+    .divbutton{
+        margin-top: 50px;
+    }
+    #signbutton{
+        width: 90px;
+        font-size: 20px;
+        height: 35px;
+    }
+    .divlogin{
+        margin-top: 13px;
+        font-size: 16px;
+        margin-bottom: 60px;
+
+    }
+    #blank{
+        font-size: 20px;
+        margin: 10px 4px;
+    }
+    .message{
+        height: 15%;
+        width: 60%;
+        font-size: 20px;
+        border-width: 13px;
+        top: 1.333%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .message p{
+        margin-top: 10px;
+    }
+.message button{
+    width: 100px;
+    height: 20px;
+    font-size: 17px;
+}
+#red , #blue , #pink{
+    width: 25px;
+    height: 25px;
+}
+
+}
