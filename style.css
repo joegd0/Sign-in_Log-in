@@ -4,9 +4,7 @@
 }
 body{
     height: 100vh;
-    justify-content: center;
     background: linear-gradient(rgb(243, 146, 146), rgb(141, 31, 31));
-    align-items: center;
 }
 #mains{
     display: flex;
@@ -20,8 +18,9 @@ body{
 }
 .all{
     background-color:rgb(206, 132, 132);
+    background: fixed;
     width: 50%;
-    height: 700px;
+    height: 700;
     margin-top: 50px;
     border-color: black;
     border-width: 5px;
@@ -82,7 +81,7 @@ body{
 }
 .divgender{
     display: flex;
-    width : 50%;
+    width : 55%;
     justify-content: center;
     align-items: center;
 }
@@ -93,18 +92,18 @@ body{
     margin-bottom: 3px;
 }
 #firstpassword{
-    display: block;
+    
     height: 35px;
-    width:  555px;
+    
     font-size: 20px;
     margin: 20px 41px;
     transition: 0.5s;
 }
 
 #secondpassword{
-    display: block;
+    
     height: 35px;
-    width: 555px;
+    
     font-size: 20px;
     margin: 20px 41px;
     transition: 0.5s;
@@ -158,7 +157,7 @@ input:hover{
 .message{
     background-color: rgb(100, 57, 117);
     height: 200px;
-    width: 700px;
+    width: 60%;
     
     position: absolute;
     top: 10px;
@@ -171,6 +170,11 @@ input:hover{
     border-color: black;
     color: #e6e6e6;
     animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+   
+    
+    
 }
 @keyframes message{
     0%{
@@ -181,13 +185,19 @@ input:hover{
         top: 10px;
     }
 }
+.message div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
 .message p{
     display: block;
-    margin-top: 70px;
-    margin-left: 100px;
+    margin-top: 60px;
+   
 }
 .message a{
-    margin-left: 250px;
+  
     color: azure;
 }
 .message button{
@@ -243,131 +253,10 @@ input:hover{
 
 
 .female{
-    height: 100vh;
-    justify-content: center;
     background: linear-gradient(rgb(208, 195, 219), rgb(118, 22, 197));
-    align-items: center;
 }
 .female .all{
     background-color:#aea6da;
-    width: 50%;
-    height: 700px;
-    margin-top: 50px ;
-    border-color: black;
-    border-width: 5px;
-    border-style: solid;
-}
-.female .sign-in{
-    font-size: 70px;
-    font-family: sans-serif;
-
-}
-.female .divsign{
-    display: flex;
-    justify-content: center;
-    border-bottom: dashed;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    align-items: center;
-}
-.female .names{
-    display: flex;
-    justify-content: space-around;
-    margin-top:    40px;
-}
-.female #firstname{
-    height: 35px;
-    width: 250px;
-    font-size: 20px;
-    transition: 0.5s;
-}
-.female #secondname{
-    height: 35px;
-    width: 250px;
-    font-size: 20px;
-    transition: 0.5s;
-}
-.divemail{
-    margin: 20px 41px;
-    display: flex;
-    justify-content: center;
-}
-.female #emailphone{
-    height: 35px;
-    width: 100%;
-    font-size: 20px;
-    transition: 0.5s;
-}
-.female .phoneratio{
-    display: flex;
-    justify-content:space-between ;
-    margin: 20px 41px;
-}
-.female #phone{
-    height: 35px;
-    width: 250px;
-    font-size: 20px;
-    transition: 0.5s;
-
-}
-.female .divgender{
-    display: flex;
-    width : 50%;
-    justify-content: center;
-    align-items: center;
-}
-.female .divgender label{
-    font-size: 25px;
-    margin-left: 20px;
-    margin-right: 5px;
-    margin-bottom: 3px;
-}
-.female #firstpassword{
-    display: block;
-    height: 35px;
-    width:  555px;
-    font-size: 20px;
-    margin: 20px 41px;
-    transition: 0.5s;
-}
-
-.female #secondpassword{
-    display: block;
-    height: 35px;
-    width: 555px;
-    font-size: 20px;
-    margin: 20px 41px;
-    transition: 0.5s;
-
-}
-.female .divbutton{
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-}
-
-.female #signbutton{
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 10px;
-    border-width: 1px;
-    transition: 0.5s;
-}
-.female .signbutton:hover{
-    scale: 1.1;
-    background-color: darkgray;
-}
-.female .divlogin{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.female .login{
-    display: block;
-}
-.female .log2{
-    transition: 0.5s;
 }
 .female input{
     background-color: rgb(222, 202, 240);
@@ -376,160 +265,27 @@ input:hover{
     border: 3px solid blueviolet;
 }
 .female #signbutton:hover,.female input[type='radio']:hover ,.female input[type='text']:focus ,.female input[type='email']:focus ,.female input[type='number']:focus ,.female input[type='password']:focus ,.female input[type='tel']:focus{
-    transform: scale(1.2);
     background:linear-gradient(rgb(208, 195, 219), rgb(202, 157, 240));
 }
-.female #blank{
-    color: rgb(230, 50, 50);
-    font-size: large;
-    margin-left: 41px;
-}
 .female #red{
-  background: linear-gradient(rgb(243, 146, 146), rgb(139, 6, 6));
-    width: 25px;
-    height: 25px;
+    background: linear-gradient(rgb(243, 146, 146), rgb(139, 6, 6));
     border-width:0.5px ;
 }
 .female #blue{
-       background: linear-gradient(rgb(109, 221, 230), rgb(134, 132, 241));
-    width: 25px;
-    height: 25px;
+    background: linear-gradient(rgb(109, 221, 230), rgb(134, 132, 241));
     border-width:0.5px ;
 }
 .female #pink{
    background: linear-gradient(rgb(208, 195, 219), rgb(118, 22, 197));
-    width: 25px;
-    height: 25px;
     border-width:3px ;
 }
 
 
 .male{
-    height: 100vh;
-    justify-content: center;
     background: linear-gradient(rgb(109, 221, 230), rgb(134, 132, 241));
-    align-items: center;
 }
 .male .all{
     background-color:#4bb5df;
-    width: 50%;
-    height: 700px;
-    margin-top: 50px ;
-    border-color: black;
-    border-width: 5px;
-    border-style: solid;
-}
-.male .sign-in{
-    font-size: 70px;
-    font-family: sans-serif;
-
-}
-.male .divsign{
-    display: flex;
-    justify-content: center;
-    border-bottom: dashed;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    align-items: center;
-}
-.male .names{
-    display: flex;
-    justify-content: space-around;
-    margin-top:    40px;
-}
-.male #firstname{
-    height: 35px;
-    width: 250px;
-    font-size: 20px;
-    transition: 0.5s;
-}
-.male #secondname{
-    height: 35px;
-    width: 250px;
-    font-size: 20px;
-    transition: 0.5s;
-}
-.divemail{
-    margin: 20px 41px;
-    display: flex;
-    justify-content: center;
-}
-.male #emailphone{
-    height: 35px;
-    width: 100%;
-    font-size: 20px;
-    transition: 0.5s;
-}
-.male .phoneratio{
-    display: flex;
-    justify-content:space-between ;
-    margin: 20px 41px;
-}
-.male #phone{
-    height: 35px;
-    width: 250px;
-    font-size: 20px;
-    transition: 0.5s;
-
-}
-.male .divgender{
-    display: flex;
-    width : 50%;
-    justify-content: center;
-    align-items: center;
-}
-.male .divgender label{
-    font-size: 25px;
-    margin-left: 20px;
-    margin-right: 5px;
-    margin-bottom: 3px;
-}
-.male #firstpassword{
-    display: block;
-    height: 35px;
-    width:  555px;
-    font-size: 20px;
-    margin: 20px 41px;
-    transition: 0.5s;
-}
-
-.male #secondpassword{
-    display: block;
-    height: 35px;
-    width: 555px;
-    font-size: 20px;
-    margin: 20px 41px;
-    transition: 0.5s;
-
-}
-.male .divbutton{
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-}
-
-.male #signbutton{
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 10px;
-    border-width: 1px;
-    transition: 0.5s;
-}
-.male .signbutton:hover{
-    scale: 1.1;
-    background-color: darkgray;
-}
-.male .divlogin{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.male .login{
-    display: block;
-}
-.male .log2{
-    transition: 0.5s;
 }
 .male input{
     background-color: rgb(189, 250, 252);
@@ -538,30 +294,136 @@ input:hover{
     border: 3px solid rgb(11, 117, 8);
 }
 .male #signbutton:hover, .male input[type='radio']:hover , .male input[type='text']:focus , .male input[type='email']:focus ,.male input[type='number']:focus ,.male input[type='password']:focus ,.male input[type='tel']:focus{
-    transform: scale(1.2);
     background: linear-gradient(rgb(109, 221, 230), rgb(134, 132, 241));
 }
-.female #blank{
-    color: rgb(230, 50, 50);
-    font-size: large;
-    margin-left: 41px;
-}
 .male #red{
-    background-color: red;
-    width: 25px;
-    height: 25px;
+    background-color: red; 
     border-width:0.5px ;
 }
 .male #blue{
-       background: linear-gradient(rgb(109, 221, 230), rgb(134, 132, 241));
-    width: 25px;
-    height: 25px;
+    background: linear-gradient(rgb(109, 221, 230), rgb(134, 132, 241));
     border-width:3px ;
 }
 .male #pink{
    background: linear-gradient(rgb(208, 195, 219), rgb(118, 22, 197));
-    width: 25px;
-    height: 25px;
-    border-width:0.5px ;
+   border-width:0.5px ;
+}
+
+@media screen and (max-width: 600px){
+
+    .all{
+        width: 50%;
+        height: 400;
+    }
+    .sign-in{
+        font-size: 30px;
+    }
+    .divsign{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .names{
+        margin-top: 20px;
+    }
+    #firstname{
+        height: 15px;
+        width: 45%;
+        font-size: 15px;
+    }
+    #secondname{
+        height: 15px;
+        width: 45%;
+        font-size: 15px;
+    }
+    .divemail{
+        margin: 10px 4px ;
+
+    }
+    #email{
+        height: 15px;
+        font-size: 15px;
+        margin: 0;
+
+    }
+    .phoneratio{
+        margin: 10px 4px ;
+        
+    }
+    #phone{
+        height: 15px;
+        font-size: 15px;
+        width:55%;
+        margin: 0;
+
+    }
+    .divgender{
+        width: 45%;
+        align-items: center;
+        justify-content: center;
+    }
+    .divgender label{
+        font-size: 13px;
+        margin-left: 2px;
+        margin-right: 0.5px;
+        margin-bottom: 1px;
+
+
+    }
+    #firstpassword{
+        height: 15px;
+        margin: 10px 4px;
+        font-size: 15px;
+        display :flex ;
+        width: 96%;
+    }
+    #secondpassword{
+        height: 15px;
+        margin: 10px 4px;
+        font-size: 15px;
+        display :flex ;
+        width: 96%;
+    }
+    .divbutton{
+        margin-top: 30px;
+    }
+    #signbutton{
+        width: 70px;
+        font-size: 15px;
+        height: 35px;
+    }
+    .divlogin{
+        margin-top: 10px;
+        font-size: 13px;
+        margin-bottom: 50px;
+
+    }
+    #blank{
+        font-size: 15px;
+        margin: 10px 4px;
+    }
+    .message{
+        height: 12%;
+        width: 60%;
+        font-size: 15px;
+        border-width: 7px;
+        top: 1.333%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .message p{
+        margin-top: 10px;
+    }
+.message button{
+    width: 100px;
+    height: 20px;
+    font-size: 12px;
+}
+#red , #blue , #pink{
+    width: 20px;
+    height: 20px;
+}
+
 }
 

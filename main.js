@@ -35,8 +35,10 @@ if (localStorage.user != null){
    message.innerHTML=`
    <p>it looks like you already have an account!  </p>
    <br>
+   <div>
    <a href='logindex.html'>Log In?</a>
    <button onclick='removemessag()'>No Thanks</button>
+  </div>
    `
 
 
