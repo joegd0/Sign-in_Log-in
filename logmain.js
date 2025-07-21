@@ -24,7 +24,6 @@ if(username == null){
    <button onclick='removemessag()'>No Thanks</button>
    `
 }
-console.log(username, firstname2 , secondname2 , email2 , phone2 , password2 , gender2);
 function removemessag(){
     message.classList.add('remove')
 }
@@ -33,6 +32,7 @@ function emailphoneF(){
     emailphonev = emailphone.value
     if(emailphonev.includes('@' )== false|| emailphonev.includes('.com' ) == false){
         if( isNaN(Number(emailphone.value))) {
+        blank.style.color='red'
         blank.innerHTML='Please enter the correct email or phone number'
         state+=1
         num1+=1
@@ -51,15 +51,15 @@ function emailphoneF(){
 function check(){
     emailphone4 =email2.replace('"' , '')
     emailphone5 =emailphone4.replace('"' , '')
-
-    phone4 =phone2.replace('"' , '')
+    phone3 =phone2.replace('+' , '')
+    phone4 =phone3.replace('"' , '')
     phone5 =phone4.replace('"' , '')
 
     password4 =password2.replace('"' , '')
     password5 =password4.replace('"' , '')
     if(emailphone.value != emailphone5 ){
         if (emailphone.value != phone5) {
-           blank.innerHTML='Please enter the correct email or phone number' 
+           blank.innerHTML="Please enter the correct email or phone number(no '+' required)" 
         }else{
            if(firstpassword.value != password5){
             blank.innerHTML='Please enter the correct pasword'
@@ -103,3 +103,7 @@ pink.onclick=
      body.classList.remove('male')
      body.classList.remove('female')
  }
+  document.getElementById('toggleFirst').onclick = function() {
+    let input = document.getElementById('firstpassword');
+    input.type = input.type === 'password' ? 'text' : 'password';
+};

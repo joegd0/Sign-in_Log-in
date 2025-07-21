@@ -27,6 +27,7 @@ let num8 =0
 let cheked =''
 let info
 let info1
+let fullphone
 
 if (localStorage.user != null){
     info = JSON.parse(localStorage.user)
@@ -62,7 +63,7 @@ button.onclick = function(){
                 firstname:firstname.value,
                 secondname:secondname.value,
                 email:email.value,
-                phone:phone.value,
+                phone:fullphone,
                 password:firstpassword.value,
                 gender:cheked
             }
@@ -94,7 +95,7 @@ function  firstnameF(){
     
 
     if( isNaN(Number(firstname.value)) === false || firstname.value=='' || firstname.value==' '){
-        
+        blank.style.color='red'
         blank.innerHTML+='*Your name Must start with an string'
        firstname.value=''
        state += 1
@@ -114,7 +115,7 @@ function  secondnameF(){
    
 
     if( isNaN(Number(secondname.value)) === false){
-        
+        blank.style.color='red'
         blank.innerHTML+='*Your name Must start with an string'
        secondname.value=''
        state += 1
@@ -131,6 +132,7 @@ function  secondnameF(){
 function emailF(){
     
     if(email.value.includes('@')== false || email.value.includes('.com')==false){
+        blank.style.color='red'
         blank.innerHTML+='*Please Enter a valid email'
         state += 1
        num3 +=1
@@ -143,7 +145,12 @@ function emailF(){
 }
 
 function phoneF(){
+    let countryCode = document.getElementById('countrycode').value;
+    let phoneNumber = document.getElementById('phone').value;
+    let fullNumber = countryCode + phoneNumber;
+    fullphone = fullNumber;
     if(isNaN(Number(phone.value))){
+        blank.style.color='red'
         blank.innerHTML='*Phone number must be only in numbers'
         phone.value = ''
         state += 1
@@ -158,8 +165,9 @@ function phoneF(){
 
 function phoneF2(){
     blankm = phone.value
-    if(blankm.toString().length < 11 || isNaN(Number(phone.value))){
-        blank.innerHTML += '   *Your phone number must be more than 11 number'
+    if(blankm.toString().length < 7 || blankm.toString().length > 11  || isNaN(Number(phone.value))){
+        blank.style.color='red'
+        blank.innerHTML += '   *Your phone number must be more than 7 number and more than 11 numbers'
         state += 1
        num5 +=1
 }else{
@@ -173,6 +181,7 @@ function firstpasswordF(){
     
     firstlength =firstpassword.value
     if( firstlength.length < 8  ){
+        blank.style.color='red'
         blank.innerHTML='   *Your passwors must contain more than 8 letters'
         state += 1
        num6 +=1
@@ -193,6 +202,7 @@ function firstpasswordF(){
             }
     }
     if(shaw != true || shwi!= true){
+        blank.style.color='red'
         blank.innerHTML+=' *Your password must contain srtrings and numbers  '
         state += 1
        num7 +=1
@@ -206,6 +216,7 @@ function firstpasswordF(){
 function secondpasswordF(){
     
     if(firstpassword.value != secondpassword.value){
+        blank.style.color='red'
         blank.innerHTML='   *Please enter the same password'
         state += 1
        num8 +=1
@@ -251,3 +262,12 @@ female.onclick=
      body.classList.remove('male')
      body.classList.remove('female')
  }
+ document.getElementById('toggleFirst').onclick = function() {
+    let input = document.getElementById('firstpassword');
+    input.type = input.type === 'password' ? 'text' : 'password';
+};
+
+document.getElementById('toggleSecond').onclick = function() {
+    let input = document.getElementById('secondpassword');
+    input.type = input.type === 'password' ? 'text' : 'password';
+};

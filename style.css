@@ -74,10 +74,39 @@ body{
 }
 #phone{
     height: 35px;
-    width: 250px;
+    width: 100%;
     font-size: 20px;
     transition: 0.5s;
 
+}
+.phone-wrapper {
+    position: relative;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.phone-wrapper .countrycode {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    font-size:20px;
+    border: none;
+    background: #00000000;
+    cursor: pointer;
+    z-index: 2;
+    width: 60px;
+
+}
+
+.phone-wrapper input[type="tel"] {
+   
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+    transition: 0.5s;
+    padding-left: 60px;
+    
 }
 .divgender{
     display: flex;
@@ -91,23 +120,45 @@ body{
     margin-right: 5px;
     margin-bottom: 3px;
 }
-#firstpassword{
-    
-    height: 35px;
-    
-    font-size: 20px;
-    margin: 20px 41px;
+#firstpassword, #secondpassword {
+    margin: 0;
+    width: 96%;
+    box-sizing: border-box;
     transition: 0.5s;
 }
 
-#secondpassword{
-    
-    height: 35px;
-    
-    font-size: 20px;
-    margin: 20px 41px;
-    transition: 0.5s;
+/* Password wrapper for all screen sizes */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
 
+.password-wrapper input[type="password"] {
+    width: 100%;
+
+    box-sizing: border-box;
+
+}
+.password-wrapper input[type="text"] {
+    width: 100%;
+
+    box-sizing: border-box;
+
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    user-select: none;
+    z-index: 2;
 }
 .divbutton{
     display: flex;
@@ -369,19 +420,18 @@ input:hover{
 
 
     }
-    #firstpassword{
-        height: 15px;
-        margin: 10px 4px;
+    .password-wrapper input[type="password"] {
+        height: 17px;
         font-size: 15px;
-        display :flex ;
-        width: 96%;
+        padding-right: 32px;
     }
-    #secondpassword{
-        height: 15px;
-        margin: 10px 4px;
+        .password-wrapper input[type="text"] {
+        height: 17px;
         font-size: 15px;
-        display :flex ;
-        width: 96%;
+        padding-right: 32px;
+    }
+    .toggle-password {
+        font-size: 10px;
     }
     .divbutton{
         margin-top: 30px;
@@ -493,19 +543,18 @@ input:hover{
 
 
     }
-    #firstpassword{
-        height: 20px;
-        margin: 15px 8px ;
+    .password-wrapper input[type="password"] {
+        height: 23px;
         font-size: 20px;
-        display :flex ;
-        width: 96%;
+        padding-right: 32px;
     }
-    #secondpassword{
-        height: 20px; 
-        margin: 15px 8px ;
+        .password-wrapper input[type="text"] {
+        height: 23px;
         font-size: 20px;
-        display :flex ;
-        width: 96%;
+        padding-right: 32px;
+    }
+    .toggle-password {
+        font-size: 18px;
     }
     .divbutton{
         margin-top: 50px;
@@ -614,19 +663,18 @@ input:hover{
 
 
     }
-    #firstpassword{
-        height: 25px;
-        margin: 5px 10px ;
-        font-size: 23px;
-        
-        width: 45%;
+    .password-wrapper input[type="password"] {
+        height: 29px;
+        font-size: 25px;
+        padding-right: 36px;
     }
-    #secondpassword{
-        height: 25px; 
-       margin: 5px 10px ;
-        font-size: 23px;
-        
-        width: 45%;
+        .password-wrapper input[type="text"] {
+        height: 29px;
+        font-size: 25px;
+        padding-right: 36px;
+    }
+    .toggle-password {
+        font-size: 20px;
     }
     .divbutton{
         margin-top: 40px;
